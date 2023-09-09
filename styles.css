@@ -1,0 +1,84 @@
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing:border-box;
+  font-size: 30px;
+  background: #000;
+  color: #fff;
+}
+#principal-box{
+  position: absolute;
+  margin-top:-800px;
+  height: 800px;
+  width: 1000px;
+  z-index:1000;
+}
+#canv{
+  z-index:0;
+}
+.node{
+  padding: 5px;
+  display: flex;
+  position:absolute;
+  height: 40px;
+  width: 100px;
+  border-radius: 10%;
+  z-index:1000;
+  background: rgb(125, 125, 125);
+  color: #fff;
+  cursor:pointer;
+}
+#stats{
+  margin: 30px;
+  position:fixed;
+  top: 100px;
+  left: 900px;
+}
+.internalBox {
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+  user-select:none;
+  padding: 0;
+  margin: auto;
+}
+#subtableStats{
+  font-size: 25px;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap:5px;
+}
+#subtableStats div{
+  display: flex;
+}
+#subtableStats div p{
+  margin: auto;
+}
+#subtableStats div div{
+  margin: auto;
+}
+
+#info{
+  font-size: 22px;
+  display: flex;
+}
+#info div{
+  margin: auto;
+}
+.color{
+  height: 30px;
+  width: 30px;
+  border-radius:100%;
+}
+#verde{
+  background: #008000;
+}
+#naranja{
+  background: #FFA500;
+  color:#000;
+}
+#rojo{
+  background: #FF0101;
+}
+
+

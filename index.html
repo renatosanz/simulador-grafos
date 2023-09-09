@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="iconoGrafos.ico">
+    <link rel="stylesheet" href="normalize.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <title>aplicacion de grafos</title>
+  </head>
+  <body>
+    <canvas id="canv" width=1000 height=800></canvas>
+    <div id="principal-box"></div>
+    <div id="stats">
+      <h1>MENU</h1>
+      <button id="sort" onclick="merge()">Actualizar Datos</button>
+      <br>
+      <div id="info">
+        <div>
+          <p>relacion exacta</p>
+          <div class="color" id="verde"></div>
+        </div>
+        <div>
+          <p>relacion cercana</p>
+          <div class="color" id="naranja"></div>
+        </div>
+        <div>
+          <p>relacion lejana</p>
+          <div class="color" id="rojo"></div>
+        </div>
+      </div>
+      <div id="subtableStats"></div>
+    </div>
+  </body>
+  <script src="app.js" charset="utf-8"></script>
+  <script src="wrap.js" charset="utf-8"></script>
+</html>
